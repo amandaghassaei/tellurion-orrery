@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+    <style> body {padding: 0; margin: 0;} </style>
+
+    <title>Calendar Etching</title>
+
+    <script src="p5.js"></script>
+    <script src="p5.svg.js"></script>
+
+    <script>
+
+        //all units in inches
+        var OD = 7;//outer diameter
+        var ID = 5.5;//outer diameter
+        var dayOD = 5.7;
+        var tenDayOD = 5.9;
+        var dayNumbersOD = 6.4;
+        var numberTextDiameter = 6.15;
+        var monthTextDiameter = 6.7;
+        var allowance = 0;//lead in/lead out for engraving, inches
+
+        var numberFontSize = 13;
+        var monthFontSize = 16;
+
+        var daysPerMonth = [
+          31.0,
+          28.2422,
+          31.0,
+          30.0,
+          31.0,
+          30.0,
+          31.0,
+          31.0,
+          30.0,
+          31.0,
+          30.0,
+          31.0
+        ];
+
+        var monthNames = [
+           "January",
+           "February",
+           "March",
+           "April",
+           "May",
+           "June",
+           "July",
+           "August",
+           "September",
+           "October",
+           "November",
+           "December"
+        ];
+
+        var dpi = 72;//default
+        var font;
+
+
+        function setup() {
+          createCanvas(8*dpi, 8*dpi, SVG);
+          noLoop();
+          // beginRecord(PDF, "calender.pdf");
+          background(255);
+          noFill();
+          font = loadFont('machtgth.ttf', drawCalendar);
+        }
+
+        function draw(){};
+
+        function drawCalendar() {
+
+          textFont(font);
+
+          textAlign(CENTER);
+
+          stroke(0);
+          noFill();
+          ellipse(width/2, height/2, dpi*OD, dpi*OD);
+          ellipse(width/2, height/2, dpi*ID, dpi*ID);
+
+            var daysSum = 0;
+          for (var i=0;i<daysPerMonth.length;i++) daysSum+= daysPerMonth[i];
+
+            stroke(255,0,0);//red
+
+          push();
+          translate(width/2, height/2);
+          var dayCount = 0;
+
+            for (i=0;i<daysPerMonth.length;i++){
+
+            for (var j=0;j<daysPerMonth[i];j++){
+              if (i==1 && j==28) continue;
+              if (j==0) continue;
+              var theta = -TWO_PI*(dayCount+j)/daysSum;
+              var cosTheta = Math.cos(theta);
+              var sinTheta = Math.sin(theta);
+              var radius = dpi*dayOD/2;
+              if (j%10 == 0) radius = dpi*tenDayOD/2;
+              line(radius*cosTheta,radius*sinTheta,dpi*(ID-allowance)/2*cosTheta, dpi*(ID-allowance)/2*sinTheta);
+
+            }
+
+            var theta = -TWO_PI*dayCount/daysSum;
+            var cosTheta = Math.cos(theta);
+            var sinTheta = Math.sin(theta);
+            line(dpi*(ID-allowance)/2*cosTheta,dpi*(ID-allowance)/2*sinTheta,dpi*(OD+allowance)/2*cosTheta, dpi*(OD+allowance)/2*sinTheta);
+            dayCount += daysPerMonth[i];
+          }
+
+          ellipse(0, 0, dpi*dayOD, dpi*dayOD);
+          ellipse(0, 0, dpi*tenDayOD, dpi*tenDayOD);
+          ellipse(0, 0, dpi*dayNumbersOD, dpi*dayNumbersOD);
+
+            //draw numbers
+          // PFont font = createFont("machtgth.ttf",numberFontSize);
+          textSize(numberFontSize);
+
+          dayCount = 0;
+          for (var i=0;i<daysPerMonth.length;i++){
+            var theta = -TWO_PI*dayCount/daysSum;
+            drawCurvedText("1", numberTextDiameter*dpi/2, theta-0.015, 1);
+            dayCount += daysPerMonth[i];
+            theta = -TWO_PI*dayCount/daysSum;
+            drawCurvedText(str(floor(daysPerMonth[i])), numberTextDiameter*dpi/2, theta+0.015, 0);
+          }
+
+            //draw month names
+          textSize(monthFontSize);
+
+          dayCount = 0;
+          for (var i=0;i<daysPerMonth.length;i++){
+            var theta = -TWO_PI*(dayCount+daysPerMonth[i]/2)/daysSum;
+            drawCurvedText(monthNames[i].toUpperCase(), monthTextDiameter*dpi/2, theta+0.005, 2);
+            dayCount += daysPerMonth[i];
+          }
+
+//          saveSVG();
+        }
+
+        function drawCurvedText(message, radius, startingTheta, alignment){
+          var arclength = startingTheta*radius;
+          if (alignment==0){
+            for (var i = message.length-1; i >=0; i--)
+            {
+              //check the width of each character.
+              var w = textWidth(message[i]);
+
+              // Each box is centered so we move half the width
+              arclength += w/2;
+              var theta = arclength / radius;
+              push();
+              translate(radius*cos(theta), radius*sin(theta));
+              rotate(theta-PI/2); // rotation is offset by 90 degrees
+
+              text(message[i],0,(textAscent()-textDescent())/2);
+        //      line(0,0,0,20);
+              pop();
+              // Move halfway again
+              arclength += w/2;
+            }
+          } else {
+            if (alignment == 2) arclength += textWidth(message)/2;
+            for (var i = 0; i < message.length; i++)
+            {
+              //check the width of each character.
+              var w = textWidth(message[i]);
+
+              // Each box is centered so we move half the width
+              arclength -= w/2;
+              var theta = arclength / radius;
+              push();
+              translate(radius*cos(theta), radius*sin(theta));
+              rotate(theta-PI/2); // rotation is offset by 90 degrees
+
+              text(message[i],0,(textAscent()-textDescent())/2);
+        //      line(0,0,0,20);
+              pop();
+              // Move halfway again
+              arclength -= w/2;
+            }
+          }
+        }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
