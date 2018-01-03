@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+    <style> body {padding: 0; margin: 0;} </style>
+
+    <title>Year Pointing Engraving</title>
+
+    <script src="p5.js"></script>
+    <script src="p5.svg.js"></script>
+
+    <script>
+
+        //all units in inches
+        var OD = 0.694*2;//outer diameter
+        var ID = 0.6*2;//outer diameter
+
+        var dpi = 72;//default
+
+        function setup() {
+          createCanvas(8*dpi, 8*dpi, SVG);
+          noLoop();
+          // beginRecord(PDF, "calender.pdf");
+          background(255);
+          noFill();
+          drawYears();
+        }
+
+        function draw(){};
+
+        function drawYears() {
+
+          stroke(0, 255, 0);
+          noFill();
+          ellipse(width/2, height/2, dpi*OD, dpi*OD);
+          ellipse(width/2, height/2, dpi*ID, dpi*ID);
+
+          stroke(255,0,0);//red
+
+          push();
+          translate(width/2, height/2);
+
+            var angle = 0.01;
+            var offset = 0.02;
+            line((ID/2+offset)*dpi, 0, (OD/2-offset)*dpi*Math.cos(angle), (OD/2-offset)*dpi*Math.sin(angle));
+            line((ID/2+offset)*dpi, 0, (OD/2-offset)*dpi*Math.cos(-angle), (OD/2-offset)*dpi*Math.sin(-angle));
+            line((OD/2-offset)*dpi*Math.cos(-angle), (OD/2-offset)*dpi*Math.sin(-angle), (OD/2-offset)*dpi*Math.cos(angle), (OD/2-offset)*dpi*Math.sin(angle));
+
+          saveSVG();
+        }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
