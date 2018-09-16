@@ -12,18 +12,17 @@
     <script>
 
         //all units in inches
-        var OD = 1.2;//outer diameter
+        var OD = 2.6;//outer diameter
 
         var yearTickID = OD-0.1;
         var fiveYearTickID = yearTickID-0.05;
         var decadeTickID = yearTickID-0.1;
         var allowance = 0;//lead in/lead out for engraving, inches
 
-        var centerHoleDiam = 0.125;
-        var torqueOffset = 0.03;
+        var centerHoleDiam = 2;
 
-        var yearFontSize = 5.5;
-        var yearLabelDia = decadeTickID-0.1;
+        var yearFontSize = 8;
+        var yearLabelDia = decadeTickID-0.18;
 
         var numYearsPerRotation = 135;
         var startDate = 2001;//year to start
@@ -31,6 +30,8 @@
 
         var dpi = 72;//default
         var font;
+
+        
 
 
         function setup() {
@@ -60,6 +61,8 @@
 
           push();
           translate(width/2, height/2);
+          push();
+          rotate((-17.5/135)*2*Math.PI);
           var dayCount = 0;
 
 
@@ -86,14 +89,13 @@
           for (var i=0;i<=100;i+=10){
               var year = startDate+i;
             var theta = -TWO_PI*i/numYearsPerRotation;
-            drawCurvedText(String(year), yearLabelDia*dpi/2, theta, 2);
+            var yearString = String(year);
+            yearString = (yearString.split("")).join(" ");
+            drawCurvedText(yearString, yearLabelDia*dpi/2, theta, 2);
           }
 
           stroke(0);
-            var angOffset = Math.acos(1-torqueOffset/centerHoleDiam*2);
-            arc(0,0,centerHoleDiam*dpi, centerHoleDiam*dpi, angOffset, -angOffset);
-            line(dpi*centerHoleDiam/2*Math.cos(angOffset), dpi*centerHoleDiam/2*Math.sin(angOffset),
-                    dpi*centerHoleDiam/2*Math.cos(-angOffset), dpi*centerHoleDiam/2*Math.sin(-angOffset));
+            arc(0,0,centerHoleDiam*dpi, centerHoleDiam*dpi, 0, Math.PI*2);
 
           saveSVG();
         }
