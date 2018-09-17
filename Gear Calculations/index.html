@@ -5,10 +5,23 @@
     <title>Gear Calculations</title>
     <script type="text/javascript" src="ImportOptions.js"></script>
     <script type="text/javascript" src="GearCalculator.js"></script>
-    <script type="text/javascript" src="CalcPerigeeFit.js"></script>
+
+    <!-- first calculate permutations of gear ratios that satisfy moon orbit ratio -->
     <script type="text/javascript">
-//        calcGearTrain(0.1185315042, 8, 55, 2, 10 / 360 / 100 / 0.1185315042, false);
+        // 10% error max
+        calcGearTrain(12.36874634, 8, 55, 3, 10 / 360 / 100 / 12.36874634, false);
     </script>
+
+    <!-- copy all printed permutations into importOptions.js -->
+    <!-- then find best permutation that minimizes gear tooth scaling given the ecliptic train -->
+    <!-- and find best single state node/perigee options -->
+    <!-- <script type="text/javascript" src="CalcFit.js"></script> -->
+
+    <!-- finally, calculate a two stage solution for remaining train -->
+    <!-- <script type="text/javascript">
+       calcGearTrain(0.1050080105, 8, 55, 2, 10 / 360 / 100 / 0.1050080105, false, true);
+    </script> -->
+    
 </head>
 <body>
 

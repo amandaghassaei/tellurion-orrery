@@ -3,7 +3,7 @@
  */
 
 
-function calcGearTrain(target_ratio, min_teeth, max_teeth, num_stages, max_error, silent) {
+function calcGearTrain(target_ratio, min_teeth, max_teeth, num_stages, max_error, silent, allowPermutations) {
     
     max_error = max_error || Infinity;
 
@@ -30,7 +30,7 @@ function calcGearTrain(target_ratio, min_teeth, max_teeth, num_stages, max_error
         var index = -1;
         for (var i = 0; i < hits.length; i++) {
             var hit = hits[i];
-            if (hit[0] == ratio) {
+            if (!allowPermutations && hit[0] == ratio) {
                 hit[1].push(teeth.slice());
                 return;//duplicate
             }
@@ -74,16 +74,16 @@ function calcGearTrain(target_ratio, min_teeth, max_teeth, num_stages, max_error
         finished = increment_teeth(0);//increment teeth num
     }
 
-    function log_output() {
-        console.log("");
-        if (hits.length == 0) console.log("no hits found");
-        for (var i = 0; i < hits.length; i++) {
-            var hit = hits[i];
-            console.log(hit[0] + "\t" + JSON.stringify(hit[1][0]) + "\t" + hit[2]);
-        }
-    }
+    // function log_output() {
+    //     console.log("");
+    //     if (hits.length == 0) console.log("no hits found");
+    //     for (var i = 0; i < hits.length; i++) {
+    //         var hit = hits[i];
+    //         console.log(hit[0] + "\t" + JSON.stringify(hit[1][0]) + "\t" + hit[2]);
+    //     }
+    // }
 
-    if (!silent) log_output();
+    // if (!silent) log_output();
 
     function make_tsv() {
         var string = "";
@@ -99,19 +99,19 @@ function calcGearTrain(target_ratio, min_teeth, max_teeth, num_stages, max_error
         console.log(make_tsv());//paste this into google docs
     }
 
-    function make_csv() {
-        var string = "";
-        for (var i = 0; i < hits.length; i++) {
-            var hit = hits[i];
-            string += hit[1][0].join(",") + "\n";
-        }
-        return string;
-    }
+    // function make_csv() {
+    //     var string = "";
+    //     for (var i = 0; i < hits.length; i++) {
+    //         var hit = hits[i];
+    //         string += hit[1][0].join(",") + "\n";
+    //     }
+    //     return string;
+    // }
 
-    if (!silent) {
-        console.log("");
-        console.log(make_csv());//paste this into google docs
-    }
+    // if (!silent) {
+    //     console.log("");
+    //     console.log(make_csv());//paste this into google docs
+    // }
 
     function get_combinations() {
         var string = "";
@@ -128,7 +128,7 @@ function calcGearTrain(target_ratio, min_teeth, max_teeth, num_stages, max_error
     }
 
     if (!silent) {
-        console.log("");
+        console.log("options:");
         console.log(get_combinations());
     }
     return hits[0];

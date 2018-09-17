@@ -49,8 +49,9 @@ function make_tsv(array){
     }
     return string;
 }
-//
-// console.log(make_tsv());//paste this into google docs
+
+console.log("moon orbit");
+console.log(make_tsv());//paste this into google docs
 
 
 
@@ -71,7 +72,8 @@ for (var i=0;i<matches.length;i++){
     var best = calcGearTrain(node_regression*matches[i][1]/matches[i][0], min_teeth, max_teeth, 1, Infinity, true)[1][0];
     allNodeTrains.push(best);
 }
-// console.log(make_tsv(allNodeTrains));
+console.log("nodes");
+console.log(make_tsv(allNodeTrains));
 
 var perigee_precession = 0.8870107566;
 var allPerigeeTrains = [];
@@ -79,4 +81,5 @@ for (var i=0;i<matches.length;i++){
     var best = calcGearTrain(perigee_precession*matches[i][1]/matches[i][0], min_teeth, max_teeth, 1, Infinity, true)[1][0];
     allPerigeeTrains.push(best);
 }
+console.log("perigee");
 console.log(make_tsv(allPerigeeTrains));
