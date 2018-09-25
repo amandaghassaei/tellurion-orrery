@@ -1,4 +1,4 @@
-' 4-side2-1/8"drill
+' 1001
 SA
 CN, 90
 IF %(25)=1 THEN GOTO UNIT_ERROR
