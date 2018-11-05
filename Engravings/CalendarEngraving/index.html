@@ -20,7 +20,7 @@
         var numberTextDiameter = tenDayOD+0.2;
         var dayNumbersOD = numberTextDiameter+0.25;
         var monthTextDiameter = dayNumbersOD+0.3;
-        var allowance = 0;//lead in/lead out for engraving, inches, this helps give better results at the edges if you are cutting with an engraving tool
+        var allowance = 0.1;//lead in/lead out for engraving, inches, this helps give better results at the edges if you are cutting with an engraving tool
 
         var numberFontSize = 13;
         var monthFontSize = 16;
@@ -101,7 +101,7 @@
               var sinTheta = Math.sin(theta);
               var radius = dpi*dayOD/2;
               if (j%10 == 0) radius = dpi*tenDayOD/2;
-              line(radius*cosTheta,radius*sinTheta,dpi*(ID-allowance)/2*cosTheta, dpi*(ID-allowance)/2*sinTheta);
+              line(dpi*(ID-allowance)/2*cosTheta, dpi*(ID-allowance)/2*sinTheta, radius*cosTheta,radius*sinTheta);
 
             }
 
@@ -111,7 +111,6 @@
             line(dpi*(ID-allowance)/2*cosTheta,dpi*(ID-allowance)/2*sinTheta,dpi*(OD+allowance)/2*cosTheta, dpi*(OD+allowance)/2*sinTheta);
             dayCount += daysPerMonth[i];
           }
-
           ellipse(0, 0, dpi*dayOD, dpi*dayOD);
           ellipse(0, 0, dpi*tenDayOD, dpi*tenDayOD);
           ellipse(0, 0, dpi*dayNumbersOD, dpi*dayNumbersOD);
