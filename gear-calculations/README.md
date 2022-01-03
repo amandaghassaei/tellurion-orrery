@@ -1,6 +1,6 @@
 # Gear Calculations
 
-The orrery design consists of 4 interconnected gear trains that control the relative motions of the earth, moon, and sun, and a fifth gear train that ticks forward a 100 year clock.
+The orrery design consists of 4 interconnected gear trains that control the relative motions of the earth, moon, and sun, and a fifth gear train that ticks forward a dial marking 100 years.
 
 <img alt="5 gear trains" src="../docs/geartrains.gif" width="500px">
 
@@ -12,7 +12,7 @@ My code for calculating the gear ratios was done quickly without much thought fo
 
 I've saved all the information I used during these calculations to a [Google Doc](https://docs.google.com/spreadsheets/d/1HO8HQtnuJBg7-cl2iLWuv1kIT8sFUn2m3BNM2MRiHnA/edit?usp=sharing).  The first tab shows the astronomical parameters I was trying to model and their frequency.  Highlighted in blue are the gear parameters I used in v1 of my design, and highlighted in magenta are parameters used in v2 of my design.  The magenta and blue colors are continued across the other tabs in the sheet, where you can see more gear ratio options I was considering.
 
-All the gear generation code was written in javascript and is included in this folder. I really liked this online [Gear Train app](http://scientific601.altervista.org/gear/gearcalc.html) and used it as a starting point as I began to design my gear trains, but found that I needed to calculate a large set of good gear trains for a given gear ratio instead of just the single most optimal configuration. The file [GearCalculator.js](https://github.com/amandaghassaei/tellurion-orrery/blob/main/gear-calculations/GearCalculator.js) contains a function `calcGearTrain` that performs an exhaustive search to find set of gears meeting min tooth, max tooth, number of stages, and maximum error requirements (it takes about ten minutes to complete for the three stage gear trains I'm looking at). The solutions (`hits`) are printed as a tsv to the console, so they can easily be copied and pasted into a spreadsheet.
+All the gear generation code was written in javascript and is included in this folder. I really liked this online [Gear Train app](http://scientific601.altervista.org/gear/gearcalc.html) and used it as a starting point as I began to design my gear trains, but found that I needed to calculate a large set of candidate gear trains for a given target ratio instead of just the single most optimal configuration. The file [GearCalculator.js](https://github.com/amandaghassaei/tellurion-orrery/blob/main/gear-calculations/GearCalculator.js) contains a function `calcGearTrain` that performs an exhaustive search to find set of gears meeting min tooth, max tooth, number of stages, and maximum error requirements (it takes about ten minutes to complete for the three stage gear trains I'm looking at). The solutions (`hits`) are printed as a tsv to the console, so they can easily be copied and pasted into a spreadsheet.
 
 ### Moon Orbit
 
@@ -34,7 +34,7 @@ CalcFit.js first determines the amount of scaling needed by the third stage of t
 
 <img alt="moon nodex gear train" src="../docs/geartrain-moonnodes.png" width="500px">
 
-I wanted to drive one of the remaining gear trains (either the moon's perigee or nodes) from a single stage off the fourth axle in my five axle setup, so I calculated optimal single stage trains for driving either the perigee or the nodes and printed this as a single tsv (pasted [here](https://docs.google.com/spreadsheets/d/1HO8HQtnuJBg7-cl2iLWuv1kIT8sFUn2m3BNM2MRiHnA/edit#gid=189566112) - `Gear Ratios (Moon Orbit)` tab, you have to scroll way to the right to see the perigee and nodes calculations). I found a few good options for a single stage to drive the nodes (highlighted in blue and magenta), and another for a single stage to drive the perigee (highlighted in orange).
+I wanted to drive one of the remaining gear trains (either the moon's perigee or nodes) from a single stage off the fourth axle in my five axle setup, so I calculated optimal single stage trains for driving either the perigee or the nodes and printed this as a single tsv (pasted [here](https://docs.google.com/spreadsheets/d/1HO8HQtnuJBg7-cl2iLWuv1kIT8sFUn2m3BNM2MRiHnA/edit#gid=189566112) – `Gear Ratios (Moon Orbit)` tab, you have to scroll way to the right to see the perigee and nodes calculations). I found a few good options for a single stage to drive the nodes (highlighted in blue and magenta ended up using these), and another for a single stage to drive the perigee (highlighted in orange).
 
 ### Moon Perigee
 
