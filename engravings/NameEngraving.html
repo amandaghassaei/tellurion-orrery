@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+    <style> body {padding: 0; margin: 0;} </style>
+
+    <title>Name Engraving</title>
+
+    <script src="p5.js"></script>
+    <script src="p5.svg.js"></script>
+
+    <script>
+
+        //all units in inches
+        var plateWidth = 1.25;
+        var plateHeight = 0.5;
+        var holeDiameter = 0.1;
+        var holeOffset = 0.1;
+
+        var line0 = "FOR MICHAEL";
+        var line1 = "LOVE, AMANDA";
+        var line2 = "2021";
+        var letterSpacing = 0.75;//in pts
+        var fontSize = 6.5;//in pts
+        var lineSpacing = fontSize + 2;//in pts
+
+        var dpi = 72;//default
+        var font;
+
+        function setup() {
+          createCanvas(2*dpi, 2*dpi, SVG);
+          noLoop();
+          background(255);
+          noFill();
+          font = loadFont('fonts/CenturyGothic.ttf', drawLines);
+        }
+
+        function draw(){};
+
+        function drawLines() {
+
+          textFont(font);
+
+          textAlign(CENTER);
+
+          push();
+          translate(width/2, height/2);
+
+          stroke(0);
+          noFill();
+          ellipse(0, 0, dpi*plateWidth, dpi*plateHeight);
+          ellipse(0, 0, dpi*plateWidth, dpi*plateHeight);
+          ellipse(dpi*(-plateWidth/2 + holeOffset), 0, dpi*holeDiameter, dpi*holeDiameter);
+          ellipse(dpi*(plateWidth/2 - holeOffset), 0, dpi*holeDiameter, dpi*holeDiameter);
+
+          stroke(255,0,0);//red
+
+          textSize(fontSize);
+          var yOffset = fontSize/2 - 1;
+          drawLine(line0, -lineSpacing + yOffset);
+          drawLine(line1, yOffset);
+          drawLine(line2, lineSpacing + yOffset);
+
+          saveSVG();
+        }
+
+        function drawLine(message, y) {
+          var width = textWidth(message) + letterSpacing * message.length;
+          var xOffset = 0;
+          for (let i = 0; i < message.length; i++) {
+            var w = textWidth(message[i]) + letterSpacing;
+            text(message[i], -width / 2 + xOffset + w / 2, y);
+            xOffset += w;
+          }
+        }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
