@@ -2,7 +2,7 @@
 
 The engravings for the orrery were fairly complicated, so I've designed them parametrically using [P5.js](https://p5js.org/).  This way, you can change high level parameters in the design (like the overall dimensions, spacing of characters, length of tick marks) and generate a new layout immediately.  Here are some variations on my calendar design:
 
-<img alt="parametric design" src="../docs/parametric.png" max-width="400px">
+<img alt="parametric design" src="../docs/parametric.png" width="400px">
 
 The scripts in this folder will generate an SVG file containing the design.  The SVGs will need to be converted into DXF before importing into Fusion (I did this in Illustrator).  All the DXFs included in this folder are in units of inches.
 
@@ -17,11 +17,11 @@ The `XXX-adjusted.dxf` files in this folder show the changes I made to the font 
 
 To give you an idea, here is what I got from [Hershey Font](https://observablehq.com/@jonsadka/hershey-vector-font-explorer) (a popular single line font):
 
-<img alt="hershey font" src="../docs/hersheyfont.png" max-width="400px">
+<img alt="hershey font" src="../docs/hersheyfont.png" width="400px">
 
 compared to Century Gothic:
 
-<img alt="century gothic font" src="../docs/centurygothic.png" max-width="400px">
+<img alt="century gothic font" src="../docs/centurygothic.png" width="400px">
 
 There's a big difference in the quality of the curved lines (compare the `R`, `B`, and `C`).
 
@@ -63,7 +63,7 @@ After it is installed, navigate to this folder in the terminal and type:
 
 When you go to `http://localhost:8000/`, you will see links to several html files:
 
-<img alt="files at http://localhost:8000/" src="../docs/localhost.png" max-width="400px">
+<img alt="files at http://localhost:8000/" src="../docs/localhost.png" width="400px">
 
 Click on each html link and you will see your edited design drawn on the screen and the page will immediately save a copy of the design as an svg.
 
@@ -72,24 +72,24 @@ Click on each html link and you will see your edited design drawn on the screen 
 
 The most deflection you'll get in an engraving cut happens where the tool enters the material.  Exiting the material can also leave a nonuniform surface finish.  Where possible I've extended paths to run outside the boundary of the workpiece for a better finish (these are called lead-ins and lead-outs):
 
-<img alt="lead ins and outs" src="../docs/leadinsouts.png" max-width="400px">
+<img alt="lead ins and outs" src="../docs/leadinsouts.png" width="400px">
 
 In general, you should try to minimize the number of times you enter and exit the material while you're cutting the workpiece.  So when cutting continuous paths made from several discrete line segments, be sure to select the segments in the correct order so that you generate a continuous toolpath.
 
 These curved paths are made from several discrete line segments that must be individually selected:
 
-<img alt="selecting continuous path" src="../docs/pathselection.png" max-width="400px">
+<img alt="selecting continuous path" src="../docs/pathselection.png" width="400px">
 
 They have been selected in order so that they are engraved in a continuous toolpath:
 
-<img alt="continuous toolpath" src="../docs/pathselectiontoolpath.png" max-width="400px">
+<img alt="continuous toolpath" src="../docs/pathselectiontoolpath.png" width="400px">
 
 When selecting paths for engraving, you will get a more consistent result if you trace identical characters or shapes in the same direction each time.  So if you have several of the character `T` in your design, pick a direction to traverse the contours of the `T` and be consistent across the toolpath.  Similarly, all tickmarks should be traversed in the same direction.
 
 See how the `E` character is traversed in the same way in this toolpath:
 
-<img alt="character traversal" src="../docs/etraversal.png" max-width="400px">
+<img alt="character traversal" src="../docs/etraversal.png" width="400px">
 
 These tick marks are also traversed in a consistent direction:
 
-<img alt="tick traversal" src="../docs/ticktraversal.png" max-width="400px">
+<img alt="tick traversal" src="../docs/ticktraversal.png" width="400px">
