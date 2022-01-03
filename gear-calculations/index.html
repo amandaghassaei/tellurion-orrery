@@ -7,10 +7,10 @@
     <script type="text/javascript" src="GearCalculator.js"></script>
 
     <!-- first calculate permutations of gear ratios that satisfy moon orbit ratio -->
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         // 10% error max
-        calcGearTrain(12.36874634, 8, 55, 3, 10 / 360 / 100 / 12.36874634, false);
-    </script>
+        calcGearTrain(12.36874634, 8, 55, 3, 10 / 360 / 100 / 12.36874634, false, true);
+    </script> -->
 
     <!-- copy all printed permutations into importOptions.js -->
     <!-- then find best permutation that minimizes gear tooth scaling given the ecliptic train -->
@@ -21,6 +21,12 @@
     <!-- <script type="text/javascript">
        calcGearTrain(0.1050080105, 8, 55, 2, 10 / 360 / 100 / 0.1050080105, false, true);
     </script> -->
+
+    <!-- optionally calculate permutations for earth orbit, spanning 4 stages -->
+    <script type="text/javascript">
+        // 10% error max
+        calcGearTrain(365.25636, 8, 55, 4, 10 / 360 / 100 / 365.25636, false, true);
+    </script>
     
 </head>
 <body>
