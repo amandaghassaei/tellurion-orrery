@@ -1,0 +1,172 @@
+Part Name	Vendor	SKU	Unit Cost	Quantity	Total Price	Num Per Container	Num Used	Notes
+								
+*note that I get a small commission off these Amazon links, but this is where I buy a lot of my supplies anyway.								
+I recommend checking your local hardware store first, as many of these materials are available there, consider these links more of a reference than a specific brand requirement.								
+								
+Brass Stock								
+3/16" 360 brass 4" x 6" sheet 	McMaster-Carr	8954K412	$36.16	1	$36.16			
+1/8" 360 brass 4" x 12" sheet	McMaster-Carr	8954K149	$47.76	1	$47.76			
+0.5" diameter x 6" 360 brass round stock	McMaster-Carr	8953K174	$16.42	1	$16.42			Only about 1.5" of this is needed for cutting shaft collars.
+0.063" 353 brass sheet 6" x 6" sheet	McMaster-Carr	8956K175	$33.31	1	$33.31			McMaster does not sell 360 ultra machinable brass in thinner sheets. I used the 353 brass instead, it is also very machinable.
+								
+Silver-Toned Metal Shim (optional)								
+n/a – you will only need a tiny scrap of silver colored metal	source locally		$0.00	1	$0.00			This is to add a silver tooth to the calendar dial to mark a special date.  Use a piece of scrap.  I used aluminum.
+								
+Steel Rod								
+1/16" OD tight tolerance stainless steel rod 6" length	McMaster-Carr	88915K11	$3.54	1	$3.54			Only a few inches needed.  Brass also available.
+1/8" OD tight tolerance stainless steel rod 12" length	McMaster-Carr	8934K24	$7.84	2	$15.68			I think it's worth it to pay the extra for tight-tolerance on these rods - makes the press fits more reliable and saves some filing work later, but McMaster also sells a standard tolerance version of these rods for 1/3 the price. Brass also available, though I ended up liking the look of the mixed metals more.
+								
+Brass Tubes								
+*Note from McMaster: Tubes with 0.014" and 0.45 mm wall thicknesses allow you to create telescoping tubes; each tube fits inside the next larger size.  I went with imperial sizes because McMaster tends to have more inventory in inches than mm that would be compatible with the tubes.								
+**These brass tubes are used widely and can often be found at the local hardware/craft store.  Some interesting ideas about working this these tubes here: http://steampunkworkshop.com/making-joints-telescoping-brass-tubing-slip-fit-press-fit-detent-fit/								
+***McMaster does not sell tubes in the 360 brass. The 260 brass has a slightly different color than the 360, but it is not very noticeable.								
+5/32" OD 0.128" ID brass tube	McMaster-Carr	8859K21	$2.12	1	$2.12			Only a few inches needed.
+3/16" OD 0.16" ID brass tube	McMaster-Carr	8859K22	$2.08	1	$2.08			Only a few inches needed.
+7/32" OD 0.191" ID brass tube	McMaster-Carr	8859K23	$2.61	1	$2.61			Only a few inches needed.
+								
+Aluminum Rod								
+3/8" OD 6061 aluminum rod 6" length	McMaster-Carr	8974K24	$1.25	1	$1.25			Only a few inches needed, used for central drive.  A 1/4" rod would also work, but was too small for my lathe chuck.
+								
+Thrust Washers								
+*I laser cut this stock to the correct washer sizes I needed. Double thick washers in the CAD model are made from two layers of washers.								
+**These washers could be made out of anything (like standard metal washers), it's not critical to be low friction because the parts of this machine don't move that fast - laser cutting them myself was cheaper and easier for me because I could control the size.								
+Delrin 0.031 strip film black 5ft	McMaster-Carr	2638T21	$3.55	1	$3.55			Only about a foot needed.
+								
+Bearings								
+10 pack bearing for 1/8" shaft with 1/4" OD and 7/64" height	Amazon		$10.89	2	$21.78	10	13	These bearings are $1 each on Amazon - since this isn't a high performance application, I don't care about quality too much. If Amazon is not an option for you, the bearings could be subbed with these (much more expensive) bearings from McMaster.
+thrust bearing 0.5" shaft, 15/16" OD	McMaster-Carr	5909K31	$3.91	1	$3.91			
+0.032" washer for 0.5" thrust bearing	McMaster-Carr	5909K44	$1.23	1	$1.23			
+								
+Screws/Bolts								
+*you should check out your local hardware store first to see if you can buy these screws individually, as very few per pack are used.								
+M2 2mm stainless steel set screws	McMaster-Carr	92015A011	$7.50	1	$7.50	25	1	Tiny screw for the moon shaft collar, you could also file down a 4mm screw to achieve this.
+M2 4mm stainless steel set screws	McMaster-Carr	92015A091	$5.98	1	$5.98	25	4	Shaft collar sets screw for various parts.
+M2.5 4mm stainless steel set screws	McMaster-Carr	92015A095	$8.29	1	$8.29	50	3	Set screws for the two shaft collars that were turned on the lathe and the crank handle.  M2 screws would work here too, but the M2.5 have more grip.
+M3 5mm stainless steel set screws	McMaster-Carr	92015A103	$8.68	1	$8.68	50	1	Used for the bottom mount on on the central axis, a smaller screw would work here (e.g. M2.5), but the M3 are better if you can swing it.
+M3 12mm stainless steel set screws	McMaster-Carr	92015A107	$12.20	1	$12.20	50	3	Used for crank adjustments (inside threaded inserts).  This is an odd part bc it is so long, you can also use regular M3 bolt, but you'll have to figure out how long you need based on your setup
+1/4-20 stainless set screw 3/8" length, 1/8" drive size	McMaster-Carr	94355A535	$4.66	1	$4.66	25	1	For sun attachment to central shaft.
+ 6-32 brass set screw 1/8" length, 1/16" drive size	McMaster-Carr	92991A142	$4.94	1	$4.94	50	2	For moon and counterweight attachment.
+M3 threaded inserts	McMaster-Carr	95807A490	$2.73	3	$8.19			These screw into the wood base for adjustment mechanism for worm gear meshing alignment.  I found needed to install these in a slightly larger hole than recommended on McMaster's website.
+2-56 1/4" decorative round head brass screws	McMaster-Carr	92453A077	$5.18	1	$5.18	100	6	McMaster's brass standoffs have a zinc coating, so I'm just using the smallest, cheapest metal standoffs available. For the final finish, I've added a bit of brass tube around the standoff.
+#2 1/4" decorative round head brass wood screws	McMaster-Carr	92407A077	$5.19	1	$5.19	100	2	For mounting the nameplate to the underside of the wood base.
+1/8" diameter 3/8" tall 2-56 threaded aluminum standoffs	McMaster-Carr	93330A252	$1.09	3	$3.27			McMaster's brass standoffs have a zinc coating, so I'm just using the smallest, cheapest metal standoffs available. For the final finish, I've added a brass tube around the standoff.
+M2 4mm brass slotted screws	McMaster-Carr	96686A363	$12.50	1	$12.50	50	2	For attaching the moon orbit cam to its mount (these will need to be shortened a little bit, but McMaster does not carry shorter lengths).
+#4 3/4" square drive stainless steel screws	McMaster-Carr	94155A096	$6.72	1	$6.72	100	9	9 used for final assembly, also used about 20 screws to fixture 1/8" and 3/16" brass stock for machining.  The important thing about these screws is that they will fit inside an 1/8" hole without damaging the surface finish.  The square drive prevents stripping.
+1.5" wood screws	McMaster-Carr	90031A203	$5.28	1	$5.28	100	~5	Only for fixturing, not used for final assembly.
+								
+Dowel Pins								
+*convenient but optional, these could be made from the 1/16" rod								
+1/16" stainless steel dowel pins 1/4" long	McMaster-Carr	90145A415	$9.91	1	$9.91	100	5	
+								
+Base / Feet / Crank								
+hardwood 5/4"x4"x30"	source locally		$15.00	1	$15.00			I used domestic cherry.
+1/8" acrylic sheet 6" x 12"	McMaster-Carr	8560K275	$5.70	1	$5.70			Only a few square inches needed.  Not visible from the outside, any color is fine.  Also used for gear depthing gauge (see below).
+1/8 IPS unfinished brass finial	Grand Brass Lamp Parts	FI669	$1.50	6	$9.00			Many other styles available, should be at least 1" in height.
+3/4" steel nipple 1/8 IPS	Grand Brass Lamp Parts	NI0-3/4X1/8	$0.10	6	$0.60			
+shaft collar 1/8" ID, 3/8" OD, 1/4" wide	McMaster-Carr	9414T3	$1.23	1	$1.23			
+size 0 brass vienna clock crank	R&N Horological	T-S 941	$5.19	1	$5.19			
+30:1 worm gear set 3mm diameter	Amazon		$17.28	1	$17.28			Order early, may ship from china.  Will need to bore the worm wheel out to 1/4" ID.  This 40:1 worm drive could also be nice, but 3D model will need to be adjusted.
+3mm x 10mm x 0.3mm compression springs	Amazon		$6.99	1	$6.99	10	6	Stiffer option: 3mm x 10mm x 0.5mm compression spring
+								
+Earth								
+*These inlaid beads vary a lot in quality, so take a close look at the pictures before ordering, I found a really nice one on AlphaStamps, but it doesn't look like they are selling this part anymore.								
+**I liked the slightly abstract representation of Earth that I got from these handmade globe beads, but if you want something more realistic, you could have one 3D printed on Shapeways.								
+20mm earth beads	multiple sources (see note)		$12.00	1	$12.00			These can be sourced from Etsy, John F Allen, and ZnetShows (among other places), note that the quality varies greatly from source to source.
+								
+Moon and counterweight								
+1/4" diameter, 6-32 threaded brass ball	Amazon		$7.54	1	$7.54	10	2	
+								
+Sun								
+1" brass ball with 1/4"-20 threaded hole	McMaster-Carr	60215K55	$7.10	1	$7.10			
+								
+Magnet Fasteners (optional)								
+In case you don't want to epoxy the calendar dial to the wood base, an option is to fasten it magnetically.								
+8mm x 3mm neodymium magnets (optional)	Amazon		$7.99	1	$7.99	50	6	
+0.018" 430 stainless steel 0.5" x 12" strip (optional)	McMaster-Carr	8457K44	$0.99	1	$0.99			This is cut into small pieces and epoxied to the backside of the brass calendar plate to attach it to the magnets
+								
+Parts Total					$396.50	<<< $100 dollars of that is for screws, of which you only use a tiny fraction		
+								
+Tools								
+1/8" upcutter end mill (for metal)	Amazon		$22.50	1	$22.50	5	1	I would have liked to use a 2 flute cutter for better chip clearance, but these were really cheap and I've been happy with their performance.
+1/16" 2 flute upcutter end mill (>1/8" length of cut) (for metal)	Carbide Depot	CU 130007	$8.79	1	$8.79			Get extras, these are easy to break.
+3/64" 2 flute upcutter end mill (1/8" length of cut) (for metal)	Carbide Depot	CU 129996	$10.34	1	$10.34			Get extras, these are easy to break.
+1/32" 2 flute upcutter end mill (1/8" length of cut) (for metal)	Carbide Depot	CU 129985	$12.14	1	$12.14			Get extras, these are very easy to break.
+30deg v-bit engraver	Amazon		$12.99	1	$12.99	10	1	The tip breaks when cutting into brass with these, but it still works.
+1/4" 2 flute downcutter end mill (for wood)	Amazon		$19.54	1	$19.54			
+1/4" 2 flute upcutter end mill (for wood)			$15.95	1	$15.95			
+1/8" 2 flute downcutter end mill (for wood)	Amazon		$18.04	1	$18.04			
+1/4" 2 flute ball nose end mill (for wood)	Amazon		$15.43	1	$15.43			
+center drill set	source locally		$13.99	1	$13.99			I have this metric one because I tend to use metric screws in other projects, exact sizes don't really matter.
+fractional drill index (increments of 1/64)	McMaster	8907A12	$31.13	1	$31.13			At some point I'd like to modify this set to work better for brass.
+90 deg countersink (optional)	McMaster-Carr	2742A28	$17.41	1	$17.41			Optional - I used this to add a slight chamfer to some holes before press fitting, reaming, or opening up the holes to a larger diameter.  I just held the tool in my hand to do this chamfering very lightly.  You can also use the tip of a large drill bit for this.
+1/8" undersized reamer	McMaster-Carr	3087A51	$12.61	1	$12.61			
+M2, M2.5, M3 taps	Amazon		$16.99	1	$16.99			I got this set from Amazon, you can use the 1/16" drill to make the hole for the M2 threads (1/16 ~= 1.6mm), the M2.5 requires a 2.0mm drill, M3 requires a 2.5mm drill.  I got the smaller drill sizes from this pin vise set (the pin vise also comes in handy for this project).
+M2 bottoming tap (optional)	McMaster	26475A63	$21.41	1	$21.41			Optional – I found that I needed this tap for the moon shaft collar (the smallest part), where there was very little clearance to cut threads.  You could also tap all the way through the part or use Loctite 603 here to bond the shaft collar to the shaft and avoid buying another tool.
+small tap handle	Amazon		$11.00	1	$11.00			I haven't used this part from Amazon specifically, but it seems like it would work.  You'll need tap handles that go down to M2, which is somewhat unusual.  I like these types of tap handles because I can drill a small center hole in the top and use the tap guide to center the tapping on the mill or drill press.
+tap guide (optional)	Amazon		$8.95	1	$8.95			Optional  I find these handy.
+edge finder	Amazon		$17.73	1	$17.73			
+center punch tool			$12.99	1	$12.99			You can also use a sharp nail and hammer for the same effect.
+angle/wire cutters	source locally		$7.06	1	$7.06			For cutting tabs on brass stock.
+#0 square drive 	source locally		$3.99	1	$3.99			
+small flathead screwdriver (like one from this set)	source locally		$5.99	1	$5.99			
+needle files	Amazon		$7.99	1	$7.99			
+larger metal file	Amazon		$7.97	1	$7.97			
+imperial hex key set	source locally		$11.64	1	$11.64			
+metric hex key set	source locally		$11.64	1	$11.64			
+M0.9 hex key	McMaster	7289A32	$0.29	1	$0.29			For driving M2 set screws.
+lathe cutting tool			$10.00	1	$10.00			Something like this - you will need to find something that fits in your setup.
+lathe parting tool	Amazon		$20.00	1	$20.00			Something like this - you will need to find something that fits in your setup.
+tumble polisher	Amazon		$66.99	1	$66.99			I have a Lortone tumble polisher, but this looks similar.
+2lbs tumble polisher stainless steel shot media	Amazon		$22.95	1	$22.95			
+digital calipers	Amazon		$25.99	1	$25.99			Obviously there are much nicer calipers out there, but if you're just starting, I'd recommend getting something you won't have to worry about too much if you accidently drop.
+digital micrometer	Amazon		$39.99	1	$39.99			Obviously there are much nicer micrometers out there, but if you're just starting, I'd recommend getting something you won't have to worry about too much if you accidently drop.
+Knurlmaster Standard Kit hand knurler (optional, but handy)	Eagle Rock Technologies	 K1-207-10-H	$188.70	1	$188.70			I ordered this with the fine tooth straight knurls installed instead of the regular straight knurls.
+butane torch	source locally		$10.00	1	$10.00			For melting engraver's wax, get one prefilled with butane.
+strap clamps	Amazon		$13.57	2	$27.14			For glueing up wood base, it's also possible to use regular clamps for this.
+								
+Gear Depthing Gauge								This is a tool that will need to be made to help accurately position the gear axes.
+This is a very simple (and probably much less accurate) version of Clickspring's tool described here.								
+In addition to the parts listed here, I also used some of the acrylic for the body of the gauge and some of the 1/8" stainless rod (filed to be a slip fit in the undersized gear holes).  These materials are listed elsewhere in the BOM.								
+vented screw 1" long, 1/8" vent diameter	McMaster-Carr	90220A210	$9.30	2	$18.60			
+corresponding nut	McMaster-Carr	92673A137	$2.68	1	$2.68	10	2	
+long M3 screw	source locally		$1.50	1	$1.50		1	This is a fine-tune adjustment screw for the gauge, aim for 30-50mm in length.  You will probably never use a screw with these dimensions again, so I recommend going to the local hardware store and buying the longest single M3 you can get rather than a whole box, I got a 30mm socket head screw.
+M3 nut	McMaster-Carr	98676A100	$5.39	1	$5.39	100	1	
+								
+Tools Total					$796.43			
+								
+Consumables								
+Loctite 603	McMaster	91458A340	$16.84	1	$16.84			
+Tap Magic cutting oil	source locally		$10.00	1	$10.00			For tapping and reaming.
+synthetic grease	Amazon		$4.98	1	$4.98			For final assembly.
+Tung Oil	source locally		$10.00	1	$10.00			
+clear lacquer spray	Amazon		$19.99	1	$19.99			I really liked this Mohawk ultra flow lacquer spray in clear gloss.  I actually used the satin finish for most of my parts, but would go for glossy next time since you can bring it to a satin finish with 0000 steel wool.  I did use the ultra flow gloss finish on the engravings and was very happy with the results after about 3 coats.  Other brands I saw recommended were Nikolas and Staybrite.  I went with the aerosol spray for convenience, but many suggest dipping in thinned lacquer for better results (so far I have not figured out a good strategy for doing this).  If you don't want to use lacquer, you might check out Renaissance Wax.
+odorless mineral spirits	source locally		$10.00	1	$10.00			
+acetone	source locally		$10.00	1	$10.00			Don't use acetone on the engravings, it will melt the wax!
+white vinegar	source locally		$1.00	1	$1.00			The acid reacts with the surface of the brass to remove oxidation and give it a whiter appearance.  Some recommend lemi shine for this, I found that the white vinegar works just as well.
+polishing cloth	source locally		$5.00	1	$5.00			Cutting up an old cotton t-shirt works.
+0000 steel wool	source locally		$5.00	1	$5.00			For applying a fine brushed finish to brass.
+multiple grit wet/dry sandpaper (for metal) 	source locally		$9.99	1	$9.99			Use this wet to reduce dust.
+multiple grit sandpaper (for wood)	source locally		$2.28	1	$2.28			I use the lighter color sandpaper on wood so it doesn't leave any black oxides on my piece.
+orbital sanding pads	source locally		$5.00	1	$5.00			
+black engraver's wax	Timesavers		$12.50	1	$12.50			For darkening the letters on the dial - I originally tried using jax black patina, but didn't end up getting a dark enough result.  Another source for the wax that I believe would be comparable is a "lacquer burn in stick": https://www.lmii.com/fretting-setup-tools/3051-burn-in-lacquer-stick-black-34-oz.html
+scotch double sided tape	source locally		$2.00	1	$2.00			I like using scotch tape, stronger tapes may make your workpiece too difficult to remove.
+painter's/masking tape	source locally		$3.00	1	$3.00			
+dawn dish soap (the blue one)	source locally		$3.00	1	$3.00			For tumble polishing.
+1"x6"x12" HDPE spoilboard	McMaster-Carr	8619K851	$23.01	1	$23.01			I screwed down the brass to this to fix it in the vise during machining.  I'm able to resurface this same piece and use it again for many projects, amortizing the cost.
+epoxy	source locally		$5.00	1	$5.00			
+								
+Consumables Total					$158.59			
+								
+Large Machines / Power tools								
+3 axis CNC mill - I used a Tormach PCNC 1100								Since this project uses very small bits, a high RPM spindle is better (though you will need the option to slow down to about 2K RPM for some of the reaming/drilling operations). The machine I used only went up to about 6k; I think I could have gone a lot faster with a higher RPM machine.
+3 axis CNC mill (for cutting wood) – I used a Shopbot PRS Alpha								I can't cut wood on the Tormach because of the coolant system, so I used the Shopbot instead.
+manual mill								Not strictly necessary, but it was useful drilling/tapping and for facing off some of my parts when the stock was a bit too thick.
+lathe								There are two brass shaft collars and a thick-walled aluminum tube that had to be made for this project.  Theoretically, they could also be made on the CNC.
+3d printer								For making jigs for drilling angled holes in Earth mount and moon cam shaft collar.  The angled holes could be cut without the jigs with a bit more effort.
+bandsaw								For cutting rod/tube stock.
+disc/belt sander								For dimensioning rod/tube stock, removing tabs from gears.
+small arbor press								For pressing together press fit joints.
+tablesaw								For cutting wood pre-glueup.
+drum sander								For planing wood post-glueups.
+cordless drill								
+orbital sander								

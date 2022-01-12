@@ -1,0 +1,1 @@
+Gear calculation results viewable on [Google Docs](https://docs.google.com/spreadsheets/d/1HO8HQtnuJBg7-cl2iLWuv1kIT8sFUn2m3BNM2MRiHnA/edit), copied here as a backup.

@@ -1,0 +1,71 @@
+0								
+23.4 deg	inclination of Earth relative to ecliptic plane							
+5.14 deg	inclination of moon's orbit relative to ecliptic plane							
+								
+for each turn of ferguson			revs relative to arm ref frame	% error	Ang deviation in 100 years (deg)			
+39	39	37	-1.054054054	-0.0274688452	10.42045077			
+39	39	39	-1	0	0			
+39	39	44	-0.8863636364	0.07295517078	-23.29632764			
+								
+100 year clock				revs relative to fixed ref frame	revs relative to arm ref frame	number of years around year clock		
+35	34	27	28	0.9926470588	-0.007352941176	-136		
+								
+for each rev of earth around sun:	direction	revs relative to arm ref frame	frequency rel to arm ref frame	revs relative to fixed ref frame	period (years) to fixed ref frame		Ang deviation in 100 years (deg)	Ang deviation in 100 years (deg)
+moon around earth	1	12.36874634	0.08084893752	13.36874634	0.0748013295		1.495396364	3.617979663
+ecliptic / earth tilt	-1	-1	1	0	n/a		0	0
+regression of moon's nodes	-1	-1.053764597	0.9489785506	-0.05376459709	18.5996	19.5996	0.0416242042	8.82802365
+precession of moon's perigee/apogee	1	-0.8870107566	1.127382044	0.1129892434	8.8504		4.13170848	0.07054938126
+rotation of earth	1	365.25636	0.002737803115	366.25636	0.002730328014			
+								
+gear configurations:								
+	number of gear stages for correct sign							
+moon around earth	2n+1							
+ecliptic / earth tilt	2n							
+regression of moon's nodes	2n							
+precession of moon's perigee/apogee	2n							
+								
+gear option #1								
+Teeth	Pitch (1/in)	Scale	Diameter	revs relative to arm ref frame	% error	Ang deviation in 100 years (deg)		
+Perigee								
+8	30.68181819	1.022727273	0.2607407407	0.8868959869	0.01293892764	4.13170848		
+37	30.68181819	1.022727273	1.205925926					
+13	28.03278689	0.9344262295	0.4637426901					
+44	28.03278689	0.9344262295	1.569590643					
+Nodes		** marked in yellow, pitch scaling is large (too far from 1 = no scaling)						
+8	19.18032787	0.6393442623	0.4170940171	1.053763441	0.0001097235471	0.0416242042		
+31	19.18032787	0.6393442623	1.616239316					
+Moon Orbit								
+49	30	1	1.633333333	12.36878788	0.0003358366866	1.495396364		
+12	30	1	0.4					
+34	30	1	1.133333333					
+10	30	1	0.3333333333					
+49	29.71428572	0.9904761905	1.649038461					
+55	29.71428572	0.9904761905	1.850961538					
+100 year clock								
+35	33.93442623	1.131147541	1.031400966					
+34	33.93442623	1.131147541	1.001932367					
+27	27.04918033	0.9016393443	0.9981818182					
+28	27.04918033	0.9016393443	1.035151515					
+								
+gear option #2								
+Teeth	Pitch (1/in)	Scale	Diameter					
+Perigee								
+10	28.75	0.9583333333	0.347826087	0.8870127163	0.0002209336268	0.07054938126		
+36	28.75	0.9583333333	1.252173913					
+11	26.44067797	0.8813559322	0.416025641					
+41	26.44067797	0.8813559322	1.550641026					
+Nodes								
+14	31.01694915	1.033898305	0.4513661203	1.05400982	0.02327112524	8.82802365		
+47	31.01694915	1.033898305	1.515300547					
+Moon Orbit								
+46	30	1	1.533333333	12.36884684	0.0008125272547	3.617979663		
+13	30	1	0.4333333333					
+37	30	1	1.233333333					
+11	30	1	0.3666666667					
+53	29.1588785	0.9719626168	1.817628205					
+51	29.1588785	0.9719626168	1.749038462					
+100 year clock								
+35	35.08474576	1.169491525	0.9975845411					
+34	35.08474576	1.169491525	0.9690821256					
+27	27.96610169	0.9322033898	0.9654545455					
+28	27.96610169	0.9322033898	1.001212121					
