@@ -1,6 +1,6 @@
 # Tellurion Orrery
 
-This is a repository of files related to building an Orrery from scratch.  Please refer to my [Instructables post](https://www.instructables.com/Orrery-Earth-Moon-and-Sun/) for more information about how to make this project.
+This is a repository of files related to building a tellurion (Earth, Moon, and Sun) orrery from scratch.  Please refer to my [Instructables post](https://www.instructables.com/Orrery-Earth-Moon-and-Sun/) for more information about how to make this project.
 
 [![Orrery (Earth, Moon, and Sun)](imgs/orreryvideo.png)](https://vimeo.com/669322303 "Orrery (Earth, Moon, and Sun) - Click to Watch!")
 
