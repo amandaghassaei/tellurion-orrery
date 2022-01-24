@@ -1,14 +1,10 @@
 # Tellurion Orrery
 
-**FYI: This project has not been published yet, just doing the last bits of documentation now and it's easier if the repo is live**
+This is a repository of files related to building a Tellurion Orrery from scratch.  Please refer to my [Instructables post](https://www.instructables.com/Orrery-Earth-Moon-and-Sun/) for more information about how to make this project.
 
-This is a repository of files related to building a Tellurion Orrery from scratch:
+[![Orrery (Earth, Moon, and Sun)](imgs/orreryvideo.png)](https://vimeo.com/669322303 "Orrery (Earth, Moon, and Sun) - Click to Watch!")
 
-PIC HERE
-
-Please refer to my [Instructables post]() for more information about how to make this project.
-
-Repository Contents:
+### Repository Contents:
 
 - [angled-jigs](angled-jigs) contains STL files for the 3D printed jigs used to cut angled holes in some parts.
 - [bom](bom) contains an archived version of the bill of materials for the project, find the most up-to-date copy on [Google Docs](https://docs.google.com/spreadsheets/d/1O1LCT8TSBF-lglJqdujguVSw7xpgpI2WuT8ZgHCS0Z8/edit?usp=sharing).
