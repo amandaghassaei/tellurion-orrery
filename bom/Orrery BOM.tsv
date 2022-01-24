@@ -50,7 +50,7 @@ M3 threaded inserts	McMaster-Carr	95807A490	$2.73	3	$8.19			These screw into the
 2-56 1/4" decorative round head brass screws	McMaster-Carr	92453A077	$5.18	1	$5.18	100	6	McMaster's brass standoffs have a zinc coating, so I'm just using the smallest, cheapest metal standoffs available. For the final finish, I've added a bit of brass tube around the standoff.
 #2 1/4" decorative round head brass wood screws	McMaster-Carr	92407A077	$5.19	1	$5.19	100	2	For mounting the nameplate to the underside of the wood base.
 1/8" diameter 3/8" tall 2-56 threaded aluminum standoffs	McMaster-Carr	93330A252	$1.09	3	$3.27			McMaster's brass standoffs have a zinc coating, so I'm just using the smallest, cheapest metal standoffs available. For the final finish, I've added a brass tube around the standoff.
-M2 4mm brass slotted screws	McMaster-Carr	96686A363	$12.50	1	$12.50	50	2	For attaching the moon orbit cam to its mount (these will need to be shortened a little bit, but McMaster does not carry shorter lengths).
+M2 4mm brass slotted screws	McMaster-Carr	96686A363	$12.50	1	$12.50	50	2	For attaching the moon orbit cam to its mount (these will need to be shortened a little bit, but McMaster does not carry shorter lengths).  I would have liked to use a decorative round head screw for this, but had trouble sourcing.
 #4 3/4" square drive stainless steel screws	McMaster-Carr	94155A096	$6.72	1	$6.72	100	9	9 used for final assembly, also used about 20 screws to fixture 1/8" and 3/16" brass stock for machining.  The important thing about these screws is that they will fit inside an 1/8" hole without damaging the surface finish.  The square drive prevents stripping.
 1.5" wood screws	McMaster-Carr	90031A203	$5.28	1	$5.28	100	~5	Only for fixturing, not used for final assembly.
 								
@@ -84,13 +84,13 @@ In case you don't want to epoxy the calendar dial to the wood base, an option is
 8mm x 3mm neodymium magnets (optional)	Amazon		$7.99	1	$7.99	50	6	
 0.018" 430 stainless steel 0.5" x 12" strip (optional)	McMaster-Carr	8457K44	$0.99	1	$0.99			This is cut into small pieces and epoxied to the backside of the brass calendar plate to attach it to the magnets
 								
-Parts Total					$396.50	<<< $100 dollars of that is for screws, of which you only use a tiny fraction		
+Parts Total					$396.50	<<< $100 dollars of that is for screws, of which you only use a few $ worth, I recommend buying screws individually to cut costs.		
 								
 Tools								
 1/8" upcutter end mill (for metal)	Amazon		$22.50	1	$22.50	5	1	I would have liked to use a 2 flute cutter for better chip clearance, but these were really cheap and I've been happy with their performance.
-1/16" 2 flute upcutter end mill (>1/8" length of cut) (for metal)	Carbide Depot	CU 130007	$8.79	1	$8.79			Get extras, these are easy to break.
+1/16" 2 flute upcutter end mill (>1/8" length of cut) (for metal)	Carbide Depot	CU 130007	$8.79	1	$8.79			
 3/64" 2 flute upcutter end mill (1/8" length of cut) (for metal)	Carbide Depot	CU 129996	$10.34	1	$10.34			Get extras, these are easy to break.
-1/32" 2 flute upcutter end mill (1/8" length of cut) (for metal)	Carbide Depot	CU 129985	$12.14	1	$12.14			Get extras, these are very easy to break.
+1/32" 2 flute upcutter end mill (1/8" length of cut) (for metal)	Carbide Depot	CU 129985	$12.14	2	$24.28			Get extras, these are very easy to break.
 30deg v-bit engraver	Amazon		$12.99	1	$12.99	10	1	The tip breaks when cutting into brass with these, but it still works.
 1/4" 2 flute downcutter end mill (for wood)	Amazon		$19.54	1	$19.54			
 1/4" 2 flute upcutter end mill (for wood)			$15.95	1	$15.95			
@@ -132,13 +132,13 @@ corresponding nut	McMaster-Carr	92673A137	$2.68	1	$2.68	10	2
 long M3 screw	source locally		$1.50	1	$1.50		1	This is a fine-tune adjustment screw for the gauge, aim for 30-50mm in length.  You will probably never use a screw with these dimensions again, so I recommend going to the local hardware store and buying the longest single M3 you can get rather than a whole box, I got a 30mm socket head screw.
 M3 nut	McMaster-Carr	98676A100	$5.39	1	$5.39	100	1	
 								
-Tools Total					$796.43			
+Tools Total					$808.57			
 								
 Consumables								
 Loctite 603	McMaster	91458A340	$16.84	1	$16.84			
 Tap Magic cutting oil	source locally		$10.00	1	$10.00			For tapping and reaming.
-synthetic grease	Amazon		$4.98	1	$4.98			For final assembly.
-Tung Oil	source locally		$10.00	1	$10.00			
+SuperLube synthetic grease	Amazon		$4.98	1	$4.98			For final assembly.
+Pure Tung Oil	source locally		$10.00	1	$10.00			
 clear lacquer spray	Amazon		$19.99	1	$19.99			I really liked this Mohawk ultra flow lacquer spray in clear gloss.  I actually used the satin finish for most of my parts, but would go for glossy next time since you can bring it to a satin finish with 0000 steel wool.  I did use the ultra flow gloss finish on the engravings and was very happy with the results after about 3 coats.  Other brands I saw recommended were Nikolas and Staybrite.  I went with the aerosol spray for convenience, but many suggest dipping in thinned lacquer for better results (so far I have not figured out a good strategy for doing this).  If you don't want to use lacquer, you might check out Renaissance Wax.
 odorless mineral spirits	source locally		$10.00	1	$10.00			
 acetone	source locally		$10.00	1	$10.00			Don't use acetone on the engravings, it will melt the wax!
